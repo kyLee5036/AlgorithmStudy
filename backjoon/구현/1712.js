@@ -12,7 +12,6 @@ function solution() {
     const c = Number(input[2]);
     if(b >= c) return -1;
     else return Math.floor(a / ( c - b) + 1);
-    
 }
 
 console.log(solution());
