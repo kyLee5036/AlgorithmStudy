@@ -21,20 +21,22 @@ function solution() {
 
 function isPrime (x) {
     if (x < 2) return false;
-    for (let i = 2; i * i <= x; i++) {
-        if (x % i == 0) {
+    for ( let i = 2; i * i <= x; i++ ) {
+        if ( x % i == 0 ) {
             return false;
         }
     }
     return true;
 };
 
-// function isPrime(n){
-// 	if( n == 1 ) return false;
-// 	for( let i = 2; i < n; i++ ){
-// 		if( n % i == 0 ) return false;
-// 	}
-// 	return true;
-// }
+function isPrime (x) {
+	if( x == 1 ) return false;
+	for ( let i = 2; i < x; i++ ) {
+		if ( x % i == 0 ) {
+            return false;
+        }
+	}
+	return true;
+}
 
 solution();
